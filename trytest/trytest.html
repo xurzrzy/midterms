@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Practice Playground</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header, nav, main, footer {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #eaeaea;
+    }
+    form div {
+      margin-bottom: 10px;
+    }
+    label {
+      display: inline-block;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Practice Lab</h1>
+    <p>A quick sandbox to experiment with core HTML elements.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a> |
+    <a href="#table-section">Table</a> |
+    <a href="#form-section">Form</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>1. Text & Lists</h2>
+      <p>This is a paragraph demonstrating <strong>bold text</strong>, <em>italic text</em>, and a <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">hyperlink</a>.</p>
+      
+      <h3>Core Concepts to Try:</h3>
+      <ul>
+        <li>Semantic tags (header, nav, main, footer)</li>
+        <li>Attributes (id, class, href, src)</li>
+        <li>Form validation rules</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="table-section">
+      <h2>2. Data Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item ID</th>
+            <th>Component</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>101</td>
+            <td>TextBox</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>Button</td>
+            <td>Pending</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <section id="form-section">
+      <h2>3. Interactive Form</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="userName">Name:</label>
+          <input type="text" id="userName" name="userName" placeholder="Enter your name" required>
+        </div>
+
+        <div>
+          <label for="userEmail">Email:</label>
+          <input type="email" id="userEmail" name="userEmail" placeholder="name@example.com" required>
+        </div>
+
+        <div>
+          <label for="userRole">Role:</label>
+          <select id="userRole" name="userRole">
+            <option value="student">Student</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="userMessage">Message:</label><br>
+          <textarea id="userMessage" name="userMessage" rows="4" cols="40" placeholder="Type practice notes here..."></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Submit Form</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 practice page. all rights reserved.</p>
+  </footer>
+
+</body>
+</html>
